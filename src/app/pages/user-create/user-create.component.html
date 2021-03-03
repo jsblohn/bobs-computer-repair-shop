@@ -1,0 +1,70 @@
+<!-- /**
+* Title: user-create.component.html
+* Author:  Nicole Forke, Janet Blohn, and Joann Saeou
+* Date: 10/24/2020
+* Date Modified: 10/31/2020
+* modified By: Joann Saeou
+* Description: this is the HTML user-create configuration page
+*/ -->
+
+
+
+<div fxLayout="column">
+    <mat-card class="mat-elevation-z6 signin-container">
+
+        <mat-card-title class="title"> <b>Create User </b> </mat-card-title>
+
+
+        <form [formGroup]="form" (ngSubmit)="createUser()" #userForm>
+
+            <mat-card-content>
+
+                <div fxLayout="column" fxLayoutGap="10px">
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['userName']" placeholder="Username" />
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['password']" placeholder="Password" />
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['firstName']" placeholder="First name" />
+                    </mat-form-field>
+
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['lastName']" placeholder="Last name" />
+                    </mat-form-field>
+
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['phoneNumber']" placeholder="Phone number" />
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['address']" placeholder="address" />
+                    </mat-form-field>
+
+
+                    <mat-form-field>
+                        <input type="text" matInput [formControl]="form.controls['email']" placeholder="Email" />
+                    </mat-form-field>
+
+                </div>
+            </mat-card-content>
+
+            <mat-card-actions align:end>
+                <button mat-raised-button (click)="cancel()" color="warn">Cancel</button> &nbsp; &nbsp; &nbsp;
+                <button type="submit" mat-raised-button color="primary">Submit</button>
+
+            </mat-card-actions>
+
+
+        </form>
+
+    </mat-card>
+
+
+</div>

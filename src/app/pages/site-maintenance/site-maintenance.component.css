@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+}
+
+.site-button, site-button.a {
+  border-radius: 1em;
+  background-color:  #BDB7AB;
+  color: #0E2130;
+  margin-bottom: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.center-button {
+  display: flex;
+  align-items: center;
+}
+
+mat-card {
+  background-color: #0E2130;
+  color: #BDB7AB;
+}
+
+mat-card-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: lighter;
+  color: #BDB7AB;
+}
+
+mat-card-subtitle {
+  text-align: center;
+  font-weight: lighter;
+  color: #BDB7AB;
+}
+
+button a, li a {
+  color: #0E2130;
+}
+
+ul li {
+  text-align: center;
+}
+
+.mat-menu-panel {
+  margin: 0 auto;
+  text-align: center;
+}

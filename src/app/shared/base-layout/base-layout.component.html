@@ -1,0 +1,50 @@
+<!--
+=============================================================
+ Title:  base-layout.component.html
+ * Modifiers: Nicole Forke, Janet Blohn, Joann Saeou
+ * Date: 10/27/2020
+ * Description: Bobs Computer Repair Services
+ * HTML for the UserDetails Component
+ ============================================
+ * Added links 10/27/20 Janet Blohn
+=============================================================
+-->
+<div fxLayout="column" class="page-container">
+
+  <!-- navigation -->
+  <nav fxFlex>
+    <mat-toolbar color="accent" fxLayout="row wrap">
+      <mat-toolbar-row>
+      <!-- navbar container -->
+        <div class="navbar-container">
+          <div fxLayout="row" >
+            <div class="center-nav">
+              <button class="navbar-link" routerLink="/" mat-button style="margin-top: 6px;">Home</button>
+              <button class="navbar-link" routerLink="/about" mat-button>About/Contact Us</button>
+            </div>
+            <!-- logo -->
+            <div>
+              <button mat-button class="logo" style="padding-left: 220px;">
+                <img src="./assets/bobsLogo.png" />
+                <h2 class="center-name">Bob's Computer Repair Shop</h2>
+              </button>
+            </div>
+            <div>
+              <div class="float-end center-nav">
+                <button mat-button class="navbar-link" routerLink="/session/signin" mat-button>Log In</button>
+                <button mat-button class="navbar-link" (click)="logOut()">Log Out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </nav>
+
+  <!-- main content -->
+  <div fxFlex>
+    <main class="main-content" fxFlex="100%;">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
